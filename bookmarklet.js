@@ -21,11 +21,11 @@
 
 
   function initBookmarklet() {
-    (window.amazonBookmarklet = function() {
+    (window.amazonBookmarklet = function($) {
 
       alert($("b:contains('ISBN-10:')").parent().text());
 
 
-    })();
+    })(jQuery);
   }
 })();
