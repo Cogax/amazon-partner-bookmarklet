@@ -24,7 +24,7 @@
     (window.amazonBookmarklet = function($) {
 
       var asin = window.location.href.match("/([a-zA-Z0-9]{10})(?:[/?]|$)")[1];
-      promt('test', 'text \n asin: '+asin);
+      prompt('test', 'text \n asin: '+asin);
 
 
     })(jQuery);
