@@ -23,7 +23,8 @@
   function initBookmarklet() {
     (window.amazonBookmarklet = function($) {
 
-      alert($("b:contains('ISBN-10:')").parent().text());
+      var asin = window.location.href.match("/([a-zA-Z0-9]{10})(?:[/?]|$)")[1];
+      promt('test', 'text \n asin: '+asin);
 
 
     })(jQuery);
